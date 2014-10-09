@@ -2,7 +2,7 @@
 class Animal():
 
   def __init__(self,**args):
-    self.nombreCientifico = args["nombreCientifico"] if "nombreCientifico" in args else
+    self.nombreCientifico = args["nombreCientifico"] if "nombreCientifico" in args else " "
 
   def setNombreCientifico(self, nombreCientifico):
     self.nombreCientifico = nombreCientifico
@@ -19,16 +19,14 @@ class Animal():
 class Perro(Animal):
 
   def __init__(self,**args):
-    self.nombrePropio = args["nombrePropio"] if "nombrePropio" in args else
+    self.nombrePropio = args["nombrePropio"] if "nombrePropio" in args else " "
 
-  def setNombreCientifico(self):
-    return "Canino"
+    self.nombreCientifico = "Caninus"
 
-  def setNombreComun(self):
-    return "Perro"
+    self.nombreComun = "Perro"
 
-  def setRaza(self,raza):
-    self.raza = "Shnawzer"
+  def setRaza(self, raza):
+    self.raza = raza
 
   def getNombrePropio(self):
     return self.NombrePropio
